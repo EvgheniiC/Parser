@@ -1,5 +1,6 @@
 package com.evghenii;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -21,6 +22,11 @@ public class ParserTest {
     @Before
     public void setUp() {
         parser = new Parser();
+    }
+
+    @After
+    public void tearDown(){
+        parser = null;
     }
 
     @Test
